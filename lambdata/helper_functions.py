@@ -9,7 +9,7 @@ class Data:
             self.data = pd.Series(data)
         elif type(data) == list:
             self.data = pd.Series(data)
-        elif (type(data) == string) & (".csv" in data):
+        elif (type(data) == str) & (".csv" in data):
             self.data = pd.read_csv(data)
 
     def null_count(self):
