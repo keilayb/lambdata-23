@@ -24,7 +24,7 @@ class Data:
         null_values = df.isnull().sum().sum()
         return null_values
 
-    def randomize(self, seed):
+    def randomize(self, seed=None):
         if type(self.data) == pd.core.series.Series:
             df = pd.DataFrame(self.data)
         if type(self.data) == pd.core.frame.DataFrame:
