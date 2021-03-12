@@ -34,17 +34,3 @@ class Data:
         for col in cols:
             shuffle1[col] = np.random.permutation(shuffle1[col])
         return shuffle1
-
-
-# Code to test whether functions work
-# test_list = [228, 8902, 563, 2, 67]
-# test_datalist = Data(test_list)
-# print(test_datalist.randomize(2))
-#
-# test_df = pd.DataFrame({'A': [1, 2, 3, 4],
-#                         'B': [5, 6, 7, 8],
-#                         'C': [9, 10, 11, 12]})
-#
-# df_data = Data(test_df)
-#
-# # print(df_data.randomize(3))
